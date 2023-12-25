@@ -1,0 +1,44 @@
+section{
+    padding: 2rem 7%;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url("../../../assests/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+ 
+}
+.content{
+    max-width: 60rem;
+}
+.content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+.content p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:#eee;
+}
+@media(max-width:991px){
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center; 
+    } 
+    .content h3{
+        font-size: 4.5rem;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,83 @@
+.auth {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 25rem;
+
+ 
+
+  .form {
+    width: 35rem;
+    padding: 1.5rem;
+    animation: slide-up 0.5s ease;
+    h2 {
+      color: var(--color-danger);
+      text-align: center;
+    }
+    form {
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 100%;
+        border: 1px solid #777;
+        border-radius: 3px;
+        outline: none;
+      }
+     
+    }
+  
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .auth{
+   left:10rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .auth{
+   left:23rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .auth{
+   left:15rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .auth{
+   left:10rem;
+  }
+  h2{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) { 
+  .auth{
+    left:8rem;
+   }
+ }
